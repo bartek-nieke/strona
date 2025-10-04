@@ -45,18 +45,21 @@
       }
     </style>
   </head>
-  <body class="p-8">
-    <div class="page max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
+  <body class="p-4 sm:p-6 md:p-8">
+    <div class="page max-w-4xl mx-auto bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden">
       <!-- Header Section -->
-      <div class="gradient-bg text-white px-12 py-16 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-32 -mt-32"></div>
-        <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-5 rounded-full -ml-24 -mb-24"></div>
+      <div class="gradient-bg text-white px-6 sm:px-8 md:px-12 py-10 sm:py-12 md:py-16 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 sm:w-48 md:w-64 h-32 sm:h-48 md:h-64 bg-white opacity-5 rounded-full -mr-16 sm:-mr-24 md:-mr-32 -mt-16 sm:-mt-24 md:-mt-32"></div>
+        <div class="absolute bottom-0 left-0 w-32 sm:w-40 md:w-48 h-32 sm:h-40 md:h-48 bg-white opacity-5 rounded-full -ml-16 sm:-ml-20 md:-ml-24 -mb-16 sm:-mb-20 md:-mb-24"></div>
         
         <div class="relative z-10">
-          <h1 class="text-5xl font-bold mb-4 leading-tight">
+          <div class="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-white bg-opacity-20 rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+            ✨ Profesjonalne doradztwo kariery
+          </div>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 leading-tight">
             Odkryj swój kierunek<br/>w życiu
           </h1>
-          <p class="text-xl text-indigo-100 font-medium">
+          <p class="text-base sm:text-lg md:text-xl text-indigo-100 font-medium">
             Kompas Kariery + Coaching Kariery
           </p>
         </div>
@@ -139,6 +142,38 @@
               <p class="text-sm text-gray-600">
                 <span class="font-semibold text-gray-900">Format:</span> Sesje 1 na 1 dostosowane do Twoich potrzeb
               </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Target Audience Section -->
+        <div class="bg-gradient-to-r from-amber-50 to-orange-50 p-8 rounded-2xl border-2 border-amber-100 mb-12">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="icon-box bg-amber-500 text-white">
+              👥
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900">Dla kogo?</h3>
+            </div>
+          </div>
+          
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-5 rounded-xl border border-amber-200">
+              <div class="text-2xl mb-2">🎓</div>
+              <h4 class="font-semibold text-gray-900 mb-2">Młodzież i studenci</h4>
+              <p class="text-sm text-gray-600">Wybór kierunku edukacji i pierwszych kroków kariery</p>
+            </div>
+            
+            <div class="bg-white p-5 rounded-xl border border-amber-200">
+              <div class="text-2xl mb-2">💼</div>
+              <h4 class="font-semibold text-gray-900 mb-2">Osoby pracujące</h4>
+              <p class="text-sm text-gray-600">Rozwój lub zmiana ścieżki zawodowej</p>
+            </div>
+            
+            <div class="bg-white p-5 rounded-xl border border-amber-200">
+              <div class="text-2xl mb-2">🚀</div>
+              <h4 class="font-semibold text-gray-900 mb-2">Przedsiębiorcy</h4>
+              <p class="text-sm text-gray-600">Klarowna wizja i strategia rozwoju</p>
             </div>
           </div>
         </div>
