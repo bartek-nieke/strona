@@ -9,6 +9,56 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
     <body>
+<!-- Navigation Bar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      
+      <!-- Logo -->
+      <a href="#top" class="hover:opacity-80 transition">
+        <img src="logo.png" alt="Bartek Nieke Logo" class="h-8 w-auto">
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#kompas" class="text-gray-700 hover:text-indigo-600 transition">Kompas Kariery</a>
+        <a href="#coaching" class="text-gray-700 hover:text-pink-600 transition">Coaching Kariery</a>
+        <a href="#omnie" class="text-gray-700 hover:text-purple-600 transition">O mnie</a>
+        <a href="#kontakt" class="text-gray-700 hover:text-gray-900 transition">Kontakt</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+    <div class="px-4 py-3 space-y-2">
+      <a href="#kompas" class="block py-2 text-gray-700">Kompas Kariery</a>
+      <a href="#coaching" class="block py-2 text-gray-700">Coaching Kariery</a>
+      <a href="#omnie" class="block py-2 text-gray-700">O mnie</a>
+      <a href="#kontakt" class="block py-2 text-gray-700">Kontakt</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.add('hidden');
+    });
+  });
+</script>
+        
         <!-- Hero Section -->
         <section
             class="relative h-screen flex items-center justify-center overflow-hidden"
@@ -26,9 +76,9 @@
             <!-- Content -->
             <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
                 <h1
-                    class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+                    class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-6 leading-tight"
                 >
-                    🎯 Odkryj swój potencjał i nadaj<br />kierunek swojemu życiu
+                    🎯 Odkryj swój potencjał i nadaj kierunek swojemu życiu
                 </h1>
                 <p
                     class="text-lg sm:text-xl md:text-2xl text-white text-opacity-90 mb-10 max-w-3xl mx-auto"
